@@ -19,15 +19,29 @@
 
 .productInfo{
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 0px;
-    width: 44%;
+    width: 38%;
 }
 
 .heart{
     position: absolute;
     top: 10px;
     right: 0px;
+}
+
+.likeButton{
+    color: black;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.heart:hover .likeButton{
+    color: #fe0100;
+}
+
+.images{
+    position: relative;
 }
 
 /* * TAGS----------------------------------------- */
@@ -50,6 +64,20 @@ a:hover, i:hover{
     cursor: pointer;
 }
 
+h2{
+    font-size: 1.2em;
+}
+
+h3{
+    margin: 5px 10px 5px 10px;
+    color: white;
+    font-size: .8em;
+}
+
+p{
+    font-size: .8em;
+}
+
 /* ? IMAGES--------------------------------------- */
 img[alt="logo"]{
     width: 50%;
@@ -57,7 +85,27 @@ img[alt="logo"]{
 
 img[alt="product"]{
     width: 100%;
+    z-index: 1;
 }
+
+img[alt="productHover"]{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.product:hover{
+    cursor: pointer;
+}
+
+.product:hover img[alt="product"]{
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .2s;
+}
+
 /* ? BUTTONS-------------------------------------- */
 
 /* ? MARGIN & PADDING----------------------------- */
@@ -111,16 +159,18 @@ img[alt="product"]{
 
 /* ? BG COLORS------------------------------------ */
 .bgBlue {background-color: #0077be;}
-.bgGreen {background-color: #3cb371;}
+.bgGreen {background-color: #008000;}
 .bgPurple {background-color: #8a2be2;}
 .bgOrange {background-color: #ff6801;}
-.bgRed {background-color: #ff0000;}
+.bgRed {background-color: #fe0100;}
 .bgPink {background-color: #ffc0cb;}
 .bgYellow {background-color: #ffff00;}
 .bgGrey {background-color: #808080;}
 .bgTeal {background-color: #008080;}
 .bgBrown {background-color: #a52a2a;}
+.bgWhite { background-color: white; }
 
 /* UTILITY---------------------------------------- */
 .textAlCenter{ text-align: center; }
 .textCanceled{ text-decoration: line-through; }
+.textColorRed{ color: red;}
