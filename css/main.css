@@ -1,0 +1,79 @@
+/* ! CSS RESET------------------------------------ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* * BOXES---------------------------------------- */
+.centeredBox{ 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+/* * TAGS----------------------------------------- */
+
+/* ? IMAGES--------------------------------------- */
+img[alt="logo"]{
+    width: 50%;
+}
+/* ? BUTTONS-------------------------------------- */
+
+/* ? MARGIN & PADDING----------------------------- */
+/* padding */
+.smallTopPadding { padding-top: .6em; }
+.mediumRowPadding { padding-top: 3em; padding-bottom: 3em; }
+/* margin */
+.smallRowMargin { margin-top: 2em; margin-bottom: 2em; }
+.smallMarginRight { margin-right: .5em; }
+.smallMarginLeft { margin-left: .5em; }
+.bigMarginLeft { margin-left: 5em; }
+.bigMarginRight { margin-right: 5em; }
+
+/* ? FLEX----------------------------------------- */
+.flexRow{ display: flex; flex-direction: row; }
+.flexCol{ display: flex; flex-direction: column;}
+/* main axis */
+.flexMainCenter{ justify-content: center; }
+.flexMainEnd{ justify-content: flex-end; }
+.flexMainBetween{ justify-content: space-between; }
+.flexMainAround{ justify-content: space-around; }
+/* cross axis */
+.flexCrossCenter{ align-items: center;}
+.flexCrossStretch{ align-items: stretch;}
+
+/* ? WIDTH---------------------------------------- */
+.col20 { width: 20%; } /* corrisponde a 1/5 */
+.col25 { width: 25%; } /* corrisponde a 1/4 */
+.col33 { width: calc(100% / 3); } /* corrisponde a 1/3 */
+.col50 { width: 50%; } /* corrisponde a 1/2 */
+.col60 { width: 60%; } /* corrisponde a 3/5 */
+.col66 { width: calc(100% / 3 * 2); } /* corrisponde a 2/3 */
+.col70 { width: 70%; }
+.col100 { width: 100%; }
+
+/* ? HEIGHT--------------------------------------- */
+.tinyMinH{ min-height: 70px; }
+.smallMinH{ min-height: 120px; }
+.mediumMinH{ min-height: 250px; }
+.largeMinH{ min-height: 400px; }
+.hugeMinH{ min-height: 600px; }
+
+/* ? BORDER--------------------------------------- */
+
+/* ? BG COLORS------------------------------------ */
+.bgBlue {background-color: #0077be;}
+.bgGreen {background-color: #3cb371;}
+.bgPurple {background-color: #8a2be2;}
+.bgOrange {background-color: #ff8c00;}
+.bgRed {background-color: #ff0000;}
+.bgPink {background-color: #ffc0cb;}
+.bgYellow {background-color: #ffff00;}
+.bgGrey {background-color: #808080;}
+.bgTeal {background-color: #008080;}
+.bgBrown {background-color: #a52a2a;}
+
+/* UTILITY---------------------------------------- */
+.textAlCenter{ text-align: center; }
