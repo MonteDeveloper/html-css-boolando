@@ -50,6 +50,7 @@ img[alt="product"]{
 /* margin */
 .smallRowMargin { margin-top: 1em; margin-bottom: 1em; }
 .smallBotMargin { margin-bottom: 1em; }
+.smallTopMargin { margin-top: 1em; }
 .smallMarginRight { margin-right: .5em; }
 .smallMarginLeft { margin-left: .5em; }
 .bigMarginLeft { margin-left: 5em; }
@@ -67,6 +68,7 @@ img[alt="product"]{
 /* cross axis */
 .flexCrossCenter{ align-items: center;}
 .flexCrossStretch{ align-items: stretch;}
+.flexCrossEnd{ align-items: end;}
 
 /* ? WIDTH---------------------------------------- */
 .col20 { width: 20%; } /* corrisponde a 1/5 */
