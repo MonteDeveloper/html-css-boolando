@@ -13,20 +13,43 @@
     max-width: 1200px; 
 }
 
+.product{
+    position: relative;
+}
+
+.productInfo{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    width: 44%;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
 /* * TAGS----------------------------------------- */
 
 /* ? IMAGES--------------------------------------- */
 img[alt="logo"]{
     width: 50%;
 }
+
+img[alt="product"]{
+    width: 100%;
+}
 /* ? BUTTONS-------------------------------------- */
 
 /* ? MARGIN & PADDING----------------------------- */
 /* padding */
 .smallTopPadding { padding-top: .6em; }
+.smallRowPadding { padding-top: 1em; padding-bottom: 1em; }
 .mediumRowPadding { padding-top: 3em; padding-bottom: 3em; }
 /* margin */
-.smallRowMargin { margin-top: 2em; margin-bottom: 2em; }
+.smallRowMargin { margin-top: 1em; margin-bottom: 1em; }
+.smallBotMargin { margin-bottom: 1em; }
 .smallMarginRight { margin-right: .5em; }
 .smallMarginLeft { margin-left: .5em; }
 .bigMarginLeft { margin-left: 5em; }
@@ -35,6 +58,7 @@ img[alt="logo"]{
 /* ? FLEX----------------------------------------- */
 .flexRow{ display: flex; flex-direction: row; }
 .flexCol{ display: flex; flex-direction: column;}
+.flexWrap{ flex-wrap: wrap;}
 /* main axis */
 .flexMainCenter{ justify-content: center; }
 .flexMainEnd{ justify-content: flex-end; }
@@ -47,6 +71,7 @@ img[alt="logo"]{
 /* ? WIDTH---------------------------------------- */
 .col20 { width: 20%; } /* corrisponde a 1/5 */
 .col25 { width: 25%; } /* corrisponde a 1/4 */
+.col32 { width: 32%;}
 .col33 { width: calc(100% / 3); } /* corrisponde a 1/3 */
 .col50 { width: 50%; } /* corrisponde a 1/2 */
 .col60 { width: 60%; } /* corrisponde a 3/5 */
@@ -62,6 +87,7 @@ img[alt="logo"]{
 .hugeMinH{ min-height: 600px; }
 
 /* ? BORDER--------------------------------------- */
+.bordSection{ border: black 2px dashed; }
 
 /* ? BG COLORS------------------------------------ */
 .bgBlue {background-color: #0077be;}
@@ -77,3 +103,4 @@ img[alt="logo"]{
 
 /* UTILITY---------------------------------------- */
 .textAlCenter{ text-align: center; }
+.textCanceled{ text-decoration: line-through; }
