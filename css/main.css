@@ -44,6 +44,10 @@
     position: relative;
 }
 
+.social{
+    margin: 0px 10px 0px 0px;
+}
+
 /* * TAGS----------------------------------------- */
 a{
     text-decoration: none;
@@ -135,6 +139,7 @@ img[alt="productHover"]{
 .flexCrossCenter{ align-items: center;}
 .flexCrossStretch{ align-items: stretch;}
 .flexCrossEnd{ align-items: end;}
+.flexCrossBaseline{ align-items: baseline;}
 
 /* ? WIDTH---------------------------------------- */
 .col20 { width: 20%; } /* corrisponde a 1/5 */
@@ -169,8 +174,11 @@ img[alt="productHover"]{
 .bgTeal {background-color: #008080;}
 .bgBrown {background-color: #a52a2a;}
 .bgWhite { background-color: white; }
+.bgBlack { background-color: #1b1b1a; }
 
 /* UTILITY---------------------------------------- */
 .textAlCenter{ text-align: center; }
 .textCanceled{ text-decoration: line-through; }
-.textColorRed{ color: red;}
+.textColorRed{ color: red; }
+.textColorWhite{ color: white; }
+.textTiny{ font-size: .6em; }
