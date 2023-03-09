@@ -49,6 +49,14 @@
 }
 
 /* * TAGS----------------------------------------- */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -125,6 +133,7 @@ img[alt="productHover"]{
 .smallMarginLeft { margin-left: .5em; }
 .bigMarginLeft { margin-left: 5em; }
 .bigMarginRight { margin-right: 5em; }
+.bigTopMargin { margin-top: 5em;}
 
 /* ? FLEX----------------------------------------- */
 .flexRow{ display: flex; flex-direction: row; }
